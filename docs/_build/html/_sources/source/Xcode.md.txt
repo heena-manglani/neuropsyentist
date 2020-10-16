@@ -15,3 +15,4 @@ XQuartz is an open-source application that connects MacOS graphical frameworks t
 To install XQuartz we will go to XQuartz site "https://www.xquartz.org/"
 and download the .dmg and then add it to our applications.
 
+ 
