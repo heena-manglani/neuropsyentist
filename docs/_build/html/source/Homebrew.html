@@ -159,14 +159,17 @@
 <p>Homebrew is a package manager tool for macOS and Linux.</p>
 <div class="section" id="installation">
 <h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Command:<br /><code class="docutils literal notranslate"><span class="pre">/bin/bash</span> <span class="pre">-c</span> <span class="pre">&quot;$(curl</span> <span class="pre">-fsSL</span> <span class="pre">https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span></code></p>
+<p>Command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li><p>Documentation can be found here: https://brew.sh/</p></li>
 </ul>
 </div>
 <div class="section" id="need-to-know">
 <h2><strong>Need to Know</strong><a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
-<p>Homebrew is installed in /usr/local. This means that every time we open up terminal it will have access to our /usr/local/bin directory.<br />Install packages using “brew” will install packages in their own direction and then symlink it into /usr/local.</p>
+<p>Homebrew is installed in /usr/local. This means that every time we open up terminal it will have access to our /usr/local/bin directory.<br />Install packages using “brew” will install packages in their own directories and then symlink it into /usr/local.</p>
 </div>
 <div class="section" id="upgrade">
 <h2><strong>Upgrade</strong><a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h2>
