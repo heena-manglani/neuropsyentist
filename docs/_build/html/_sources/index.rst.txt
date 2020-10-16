@@ -18,9 +18,9 @@ Guide
 .. toctree::
    :maxdepth: 1
 
-   source/Xcode.rst
-   source/Homebrew.rst
-   source/Python.rst
+   source/Xcode.md
+   source/Homebrew.md
+   source/Python.md
 
    :caption: Contents:
 
