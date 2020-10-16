@@ -3,7 +3,7 @@ Homebrew
 
 Homebrew is a package manager tool for macOS and Linux.
 
-## Installation
+## **Installation**
 Command:  
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"```
 * Documentation can be found here: https://brew.sh/

@@ -20,6 +20,7 @@ Guide
 
    source/Xcode.md
    source/Homebrew.md
+   source/Git.md
    source/Python.md
 
    :caption: Contents:
