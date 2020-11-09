@@ -18,7 +18,7 @@ xcode-select --install
 XQuartz
 -------
 
-XQuartz is an open-source application that connects MacOS graphical frameworks to many GUIs not specifically designed for MacOS. 
+XQuartz is an open-source application that connects MacOS graphical frameworks to GUIs. 
 * XQuartz makes it possible to use GUIs. 
 
 ## **Installation**
