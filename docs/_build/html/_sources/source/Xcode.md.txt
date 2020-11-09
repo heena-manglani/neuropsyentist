@@ -11,7 +11,7 @@ XCode provides access to a compiler, text editor and other tools.
 ## **Installation**
 Open the terminal and enter this command:
 ```
-/bin/bash "xcode-select --install"
+xcode-select --install
 ```
 ------
 
