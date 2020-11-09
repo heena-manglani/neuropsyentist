@@ -6,7 +6,7 @@
 Welcome to Neuropsyentist's documentation!
 ==========================================
 
-How to set up your mac from scratch for doing MRI analysis.
+.. **How to set up a mac from scratch for doing MRI analysis**
 -----------------------------------------------------------
 
 Setting up your Mac
@@ -19,7 +19,8 @@ Guide
    :maxdepth: 1
 
    source/Xcode.md
-   source/Homebrew.md
+   source/PackageManagers.md
+   source/VScode.md
    source/Git.md
    source/Python.md
 
