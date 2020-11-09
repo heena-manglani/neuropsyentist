@@ -16,10 +16,10 @@ Guide
 ^^^^^
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
-   source/XCode.md
    source/PackageManagers.md
+   source/XCode.md
    source/VScode.md
    source/Git.md
    source/Python.md
