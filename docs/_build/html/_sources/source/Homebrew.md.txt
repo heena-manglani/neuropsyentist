@@ -8,12 +8,13 @@ Command:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
-* Documentation can be found here: https://brew.sh/
+* [Homebrew documentation](https://brew.sh/)
 
 ## **Need to Know**
-Homebrew is installed in /usr/local. This means that every time we open up terminal it will have access to our /usr/local/bin directory.  
-Install packages using “brew” will install packages in their own directories and then symlink it into /usr/local. 
+Homebrew is installed in /usr/local. Every time we open up terminal it will have access to our /usr/local/bin directory.  
+Installing packages using “brew” will install packages in their own directories and then symlink it into /usr/local. 
 
 ## **Upgrade**
-Command:  
-`Brew upgrade`
+```
+/bin/bash "Brew upgrade"
+```

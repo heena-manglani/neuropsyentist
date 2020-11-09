@@ -1,18 +1,27 @@
 XCode
 =====
-Xcode is an Integrated Development Environment (IDE) for MacOS containing a suite of software development tools made by Apple. 
-Xcode gives us access to a compiler, text editor and some other tools.
+XCode is an Integrated Development Environment (IDE) for MacOS.
+* What's an IDE? An IDE helps programmers code. 
+* You can write and edit code, execute commands, and debug.
 
-Open the terminal and enter this command  
-```xcode-select --install``` 
+XCode contains a suite of software development tools made by Apple.  
+XCode provides access to a compiler, text editor and other tools.
 
+
+## **Installation**
+Open the terminal and enter this command:
+```
+/bin/bash "xcode-select --install"
+```
+------
 
 XQuartz
 -------
 
-XQuartz is an open-source application that connects MacOS graphical frameworks to many GUIs that are not specifically designed for MacOS. FSL and MRtrix3 are two such applications that we will use later in this series.
+XQuartz is an open-source application that connects MacOS graphical frameworks to many GUIs not specifically designed for MacOS. 
+* XQuartz makes it possible to use GUIs. 
 
-To install XQuartz we will go to XQuartz site "https://www.xquartz.org/"
-and download the .dmg and then add it to our applications.
+## **Installation**
+To install XQuartz, go to the [XQuartz site](https://www.xquartz.org/), download the .dmg, and add it to applications.
 
  
