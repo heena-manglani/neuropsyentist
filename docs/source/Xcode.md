@@ -4,7 +4,7 @@ XCode is an Integrated Development Environment (IDE) for MacOS.
 * What's an IDE? An IDE helps programmers code. 
 * You can write and edit code, execute commands, and debug.
 
-XCode contains a suite of software development tools made by Apple.  
+XCode contains a suite of software development tools made by Apple.
 XCode provides access to a compiler, text editor and other tools.
 
 

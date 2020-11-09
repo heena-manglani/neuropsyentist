@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>XCode &mdash; Neuropsyentist 0.0.1 documentation</title>
+  <title>Package Managers &mdash; Neuropsyentist 0.0.1 documentation</title>
   
 
   
@@ -35,9 +35,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Git" href="Git.html" />
-    <link rel="prev" title="Welcome to Neuropsyentist’s documentation!" href="../index.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,13 +80,8 @@
               
             
             
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">XCode</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>Installation</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#xquartz">XQuartz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1"><strong>Installation</strong></a></li>
-</ul>
-</li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="Xcode.html">XCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
 </ul>
@@ -137,13 +130,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>XCode</li>
+      <li>Package Managers</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/source/Xcode.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/source/Package_Managers.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -156,33 +149,79 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="xcode">
-<h1>XCode<a class="headerlink" href="#xcode" title="Permalink to this headline">¶</a></h1>
-<p>XCode is an Integrated Development Environment (IDE) for MacOS.</p>
+  <div class="section" id="package-managers">
+<h1>Package Managers<a class="headerlink" href="#package-managers" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://brew.sh/">Homebrew</a>,  <a class="reference external" href="https://docs.conda.io/en/latest/">Anaconda</a> and <a class="reference external" href="https://pip.pypa.io/en/stable/">Pip</a> are all package installer tools.</p>
+<p><strong>Why do we need a package manager tool?</strong></p>
 <ul class="simple">
-<li><p>What’s an IDE? An IDE helps programmers code.</p></li>
-<li><p>You can write and edit code, execute commands, and debug.</p></li>
+<li><p>Softwares come with dependencies.</p></li>
+<li><p>Package manager tools allow us to download software packages with everything they need.</p></li>
+<li><p>They also make sure that packages play nice.</p>
+<ul>
+<li><p>They analyze the current environment (all of the existing packages) and install compatible dependencies.</p></li>
 </ul>
-<p>XCode contains a suite of software development tools made by Apple.
-XCode provides access to a compiler, text editor and other tools.</p>
+</li>
+</ul>
+<p><strong>What’s the difference between homebrew vs anaconda vs pip?</strong></p>
+<ul class="simple">
+<li><p>Homebrew is a package manager tool for macOS and Linux.</p></li>
+<li><p>Anaconda distributes most of the popular scientific computing packages.</p></li>
+<li><p>Pip is a package manager specific to the Python Package Index (PyPI).</p>
+<ul>
+<li><p>It installs all Python package dependecies as they are (regardless of whether they are compatible with existing packages).</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Which one should I use to install packages?</strong></p>
+<ul class="simple">
+<li><p>It depends on what kind of package you want to install.</p></li>
+<li><p>If mac application, use brew.</p></li>
+<li><p>If python package, first try conda then conda-forge. If not, use pip.</p>
+<ul>
+<li><p>Remember, anaconda manages dependencies + versioning.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="homebrew">
+<h2>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h2>
+<p>Almighty “brew” commands</p>
+<ul class="simple">
+<li><p>to find packages = “brew search”</p></li>
+<li><p>to install = “brew install”</p></li>
+<li><p>to remove = “brew uninstall”</p></li>
+</ul>
+</div>
+<div class="section" id="need-to-know">
+<h2><strong>Need to Know</strong><a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Homebrew is installed in /usr/local.</p></li>
+<li><p>Every time you open up the terminal, it will have access to our /usr/local/bin directory.</p></li>
+<li><p>Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local.</p></li>
+</ul>
+</div>
 <div class="section" id="installation">
 <h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Open the terminal and enter this command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+<p>Command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
 </pre></div>
 </div>
 </div>
-<hr class="docutils" />
-<div class="section" id="xquartz">
-<h2>XQuartz<a class="headerlink" href="#xquartz" title="Permalink to this headline">¶</a></h2>
-<p>XQuartz is an open-source application that connects MacOS graphical frameworks to GUIs.</p>
-<ul class="simple">
-<li><p>XQuartz makes it possible to use GUIs.</p></li>
-</ul>
+<div class="section" id="upgrade">
+<h2><strong>Upgrade</strong><a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">upgrade</span>
+</pre></div>
 </div>
-<div class="section" id="id1">
-<h2><strong>Installation</strong><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>To install XQuartz, go to the <a class="reference external" href="https://www.xquartz.org/">XQuartz site</a>, download the .dmg, and add it to applications.</p>
+</div>
+<div class="section" id="anaconda">
+<h2>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>conda = package manager</p>
+<ul>
+<li><p>conda-forge: to install more packages</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 
@@ -191,15 +230,6 @@ XCode provides access to a compiler, text editor and other tools.</p>
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Git.html" class="btn btn-neutral float-right" title="Git" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Neuropsyentist’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

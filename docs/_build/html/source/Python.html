@@ -83,13 +83,13 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Xcode.html">XCode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Homebrew.html">Homebrew</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation"><strong>Installation</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-libraries-for-data-science">Python Libraries for Data Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1"><strong>Installation</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#python-libraries-for-data-science">Python Libraries for Data Science</a></li>
 </ul>
 
             
@@ -157,10 +157,10 @@
             
   <div class="section" id="python">
 <h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
-<p>Powerful programming language, well-maintained by development team with frequent updates. Check out the <a class="reference external" href="https://www.python.org/">documentation</a>.</p>
+<p>Powerful programming language, well-maintained by development team. Check out the <a class="reference external" href="https://www.python.org/">Python documentation</a>.</p>
 <ul class="simple">
 <li><p>Versatile! Can be used as a simple calculator, to organize and manipulate data structures, visualize data, for machine learning, and even manipulate MRI data.</p></li>
-<li><p>Macs come pre-installed with python 2.7 but most packages you use will likely require python 3 and above.</p></li>
+<li><p>Macs come pre-installed with python 2.7 but most packages will likely require python 3(+).</p></li>
 <li><p>To take advantage of the robustness of python, recommend installing libraries.</p>
 <ul>
 <li><p>Library = package that uses python to perform pre-set functions</p></li>
@@ -171,66 +171,33 @@
 </ul>
 <div class="section" id="installation">
 <h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-</div>
+<p>To install the latest version of Python, go to the <a class="reference external" href="https://www.python.org/downloads/mac-osx/">Python for Mac</a>, download the macOS 64-bit installer, and follow prompts.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="python-libraries-for-data-science">
-<h1>Python Libraries for Data Science<a class="headerlink" href="#python-libraries-for-data-science" title="Permalink to this headline">¶</a></h1>
+<h2>Python Libraries for Data Science<a class="headerlink" href="#python-libraries-for-data-science" title="Permalink to this headline">¶</a></h2>
 <p><strong>Data Organization &amp; Processing</strong></p>
 <ul class="simple">
-<li><p>Pandas: essential for organization/manipulation/plotting of series data (single column), and data frames (two-dimensional, table with multiple columns)</p>
-<ul>
-<li><p>Deal with missing data (e.g., impute)</p></li>
-<li><p>Add/delete columns</p></li>
-<li><p>Plot data with histogram or plot box</p></li>
-</ul>
-</li>
-<li><p>NumPy: Numerical Python: perform operations on arrays and matrices (i.e., column of values)</p></li>
-<li><p>SciPy: includes modules for linear algebra, integration, optimization, and statistics</p>
-<ul>
-<li><p>Built upon NumPy</p></li>
-</ul>
-</li>
-<li><p>Statsmodels: computation of descriptive statistics, estimation and inference for statistical models.</p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/">Pandas</a>: organize, manipulate, plot single column series data, and data frames tables</p></li>
+<li><p><a class="reference external" href="https://numpy.org/">NumPy</a>: short for Numerical Python, perform operations on arrays and matrices</p></li>
+<li><p><a class="reference external" href="https://www.scipy.org/">SciPy</a>: conduct linear algebra, integration, optimization, and statistics</p></li>
 </ul>
 <p><strong>Data Visualization</strong></p>
 <ul class="simple">
-<li><p>Matplotlib: plotting aka making pretty figures (think making attention-grabbing figures like line graphs, scatterplots, histograms)</p>
-<ul>
-<li><p>Gives great competition to pricey MATLAB</p></li>
-</ul>
-</li>
-<li><p>Seaborn: extends Matplotlib for making figures to visualize statistical models</p>
-<ul>
-<li><p>Think correlation matrices, connectivity matrices, distributions)</p></li>
-</ul>
-</li>
-<li><p>Plotly: web-based tool; graph plotting library</p>
-<ul>
-<li><p>Think creating and displaying figures, updating figures, hovering over text for details</p></li>
-<li><p>Basic charts, violin plots, maps, subplots (think multi-component figure)</p></li>
-</ul>
-</li>
-<li><p>Bokeh: for interactive and scalable visualizations through web-browsers (aka awesome presentations).</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/">Matplotlib</a>: plotting, making pretty figures (line graphs, scatterplots, histograms)</p></li>
+<li><p><a class="reference external" href="https://seaborn.pydata.org/">Seaborn</a>: extends Matplotlib for making figures to visualize statistical tests and models (correlation matrices, connectivity matrices, distributions)</p></li>
+<li><p><a class="reference external" href="https://plotly.com/">Plotly</a>: web-based tool; graph plotting library for creating and displaying figures, hovering over to show details.</p></li>
+<li><p><a class="reference external" href="https://docs.bokeh.org/en/latest/index.html">Bokeh</a>: for interactive and scalable visualizations through web-browsers (aka cool presentations).</p></li>
 </ul>
 <p><strong>Machine Learning/AI</strong></p>
 <ul class="simple">
-<li><p>Scikit-Learn: group of packages in the SciPy stack</p>
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/">Scikit-Learn</a>: group of packages in the SciPy stack</p>
 <ul>
-<li><p>Machine learning and data mining. Think classification, clustering, regression, dimensionality reduction, model selection)</p>
-<ul>
-<li><p>Support vector machine, random forests, k-means clustering, spectral clustering, mean shift, cross-validation)</p></li>
+<li><p>Machine learning and data mining. Think classification, clustering, regression, dimensionality reduction, model selection.</p></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><p>TensorFlow: for machine learning + deep learning, artificial intelligence library for creating large-scale neural networks</p>
-<ul>
-<li><p>Good for handling multiple data sets</p></li>
-<li><p>Deep learning models and deploying ML-powered applications</p></li>
-</ul>
-</li>
-<li><p>Keras: neural network library</p>
+<li><p><a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a>: artificial intelligence library for creating large-scale neural networks (machine learning + deep learning)</p></li>
+<li><p><a class="reference external" href="https://keras.io/">Keras</a>: neural network library</p>
 <ul>
 <li><p>TensorFlow’s high-level API for building and training Deep Neural Network code</p></li>
 <li><p>Statistical modeling but with images + text</p></li>
@@ -238,6 +205,10 @@
 </ul>
 </li>
 </ul>
+</div>
+<div class="section" id="id1">
+<h2><strong>Installation</strong><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 

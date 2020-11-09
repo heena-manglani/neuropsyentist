@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Homebrew &mdash; Neuropsyentist 0.0.1 documentation</title>
+  <title>Package Managers &mdash; Neuropsyentist 0.0.1 documentation</title>
   
 
   
@@ -84,12 +84,14 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Xcode.html">XCode</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Homebrew</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>Installation</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Package Managers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#homebrew">Homebrew</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#need-to-know"><strong>Need to Know</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>Installation</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#upgrade"><strong>Upgrade</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#anaconda">Anaconda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
 </ul>
@@ -138,7 +140,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Homebrew</li>
+      <li>Package Managers</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,19 +159,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="homebrew">
-<h1>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h1>
-<p>Homebrew is a package manager tool for macOS and Linux.</p>
-<div class="section" id="installation">
-<h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
-</pre></div>
-</div>
+  <div class="section" id="package-managers">
+<h1>Package Managers<a class="headerlink" href="#package-managers" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://brew.sh/">Homebrew</a>,  <a class="reference external" href="https://docs.conda.io/en/latest/">Anaconda</a> and <a class="reference external" href="https://pip.pypa.io/en/stable/">Pip</a> are all package installer tools.</p>
+<p><strong>Why do we need a package manager tool?</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://brew.sh/">Homebrew documentation</a></p></li>
+<li><p>Softwares come with dependencies.</p></li>
+<li><p>Package manager tools allow us to download software packages with everything they need.</p></li>
+<li><p>They also make sure that packages play nice.</p>
+<ul>
+<li><p>They analyze the current environment (all of the existing packages) and install compatible dependencies.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>What’s the difference between homebrew vs anaconda vs pip?</strong></p>
+<ul class="simple">
+<li><p>Homebrew is a package manager tool for macOS and Linux.</p></li>
+<li><p>Anaconda distributes most of the popular scientific computing packages.</p></li>
+<li><p>Pip is a package manager specific to the Python Package Index (PyPI).</p>
+<ul>
+<li><p>It installs all Python package dependecies as they are (regardless of whether they are compatible with existing packages).</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Which one should I use to install packages?</strong></p>
+<ul class="simple">
+<li><p>It depends on what kind of package you want to install.</p></li>
+<li><p>If mac application, use brew.</p></li>
+<li><p>If python package, first try conda then conda-forge. If not, then use pip.</p>
+<ul>
+<li><p>Anaconda manages dependencies + versioning.</p></li>
+</ul>
+</li>
 </ul>
 </div>
+<div class="section" id="homebrew">
+<h1>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h1>
+<p>Almighty “brew” commands</p>
+<ul class="simple">
+<li><p>to find packages = “brew search”</p></li>
+<li><p>to install = “brew install”</p></li>
+<li><p>to remove = “brew uninstall”</p></li>
+</ul>
 <div class="section" id="need-to-know">
 <h2><strong>Need to Know</strong><a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -178,12 +209,29 @@
 <li><p>Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local.</p></li>
 </ul>
 </div>
+<div class="section" id="installation">
+<h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="upgrade">
 <h2><strong>Upgrade</strong><a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">upgrade</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="anaconda">
+<h1>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>conda = package manager</p>
+<ul>
+<li><p>conda-forge: to install more packages</p></li>
+</ul>
+</li>
+</ul>
 </div>
 
 
