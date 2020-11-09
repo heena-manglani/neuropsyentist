@@ -22,25 +22,25 @@ Package Managers
     * Remember, anaconda manages dependencies + versioning. 
     
 ------
-Homebrew
---------
+**Homebrew**
+------------
 Almighty "brew" commands
 * to find packages = "brew search"
 * to install = "brew install"
 * to remove = "brew uninstall"
 
-## **Need to Know**
+## Need to Know
 * Homebrew is installed in /usr/local.  
 * Every time you open up the terminal, it will have access to our /usr/local/bin directory.  
 * Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local. 
 
-## **Installation**
+## Installation
 Command:  
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-## **Upgrade**
+## Upgrade
 ```
 brew upgrade
 ```
