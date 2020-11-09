@@ -16,9 +16,9 @@ Guide
 ^^^^^
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
-   source/Xcode.md
+   source/XCode.md
    source/PackageManagers.md
    source/VScode.md
    source/Git.md
