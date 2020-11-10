@@ -1,7 +1,7 @@
 Package Managers
 ================
 
-[Homebrew](https://brew.sh/),  [Anaconda](https://docs.conda.io/en/latest/) and [Pip](https://pip.pypa.io/en/stable/) are all package installer tools.
+<a href="https://brew.sh/" target="_blank" rel="noreferrer">Homebrew</a>, <a href="https://docs.conda.io/en/latest/" target="_blank" rel="noreferrer">Anaconda</a>, and <a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noreferrer">Pip</a> are all package installer tools.
 
 **Why do we need a package manager tool?**
 * Softwares come with dependencies. 

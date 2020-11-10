@@ -8,7 +8,7 @@ Command:
 brew install git
 ```
 
-* Documentation can be found here: https://git-scm.com/doc
+* Documentation can be found here: <a href="https://git-scm.com/doc" target="_blank" rel="noreferrer">git-scm.com/doc</a>
 
 ## **Need to Know**
 * MacOS comes with git preinstalled in /usr/bin/git
@@ -54,3 +54,4 @@ git config user.name
 git config user.email
 git diff
 ```
+<a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank" rel="noreferrer">Git Cheat Sheet</a>
