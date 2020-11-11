@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,18 +12,12 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -34,6 +29,10 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="VScode" href="VScode.html" />
@@ -51,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Neuropsyentist
+            <a href="../index.html" class="icon icon-home"> Neuropsyentist
           
 
           
@@ -74,7 +73,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -100,7 +98,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -139,7 +136,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>Package Managers</li>
     
@@ -169,6 +166,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
 </pre></div>
 </div>
+<p>To install anaconda, go to the <a href="https://www.anaconda.com/products/individual" target="_blank" rel="noreferrer">Anaconda site</a>, download the 64-Bit Graphical Installer OR the 64-Bit Command Line Installer.</p>
 </div>
 <div class="section" id="need-to-know">
 <h2>Need to Know<a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
@@ -212,10 +210,23 @@
 <h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
 <p>Almighty “brew” commands</p>
 <ul class="simple">
-<li><p>to find packages = “brew search”</p></li>
-<li><p>to install = “brew install”</p></li>
-<li><p>to remove = “brew uninstall”</p></li>
+<li><p>Find package:</p></li>
 </ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew search &lt;package&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Install:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install &lt;package&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Remove:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew uninstall &lt;package&gt;
+</pre></div>
+</div>
 </div>
 <div class="section" id="id1">
 <h2>Need to Know<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
@@ -227,7 +238,7 @@
 </div>
 <div class="section" id="upgrade">
 <h2>Upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">upgrade</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew upgrade
 </pre></div>
 </div>
 </div>
@@ -253,19 +264,11 @@
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Heena Manglani &amp; Eric Terranova
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -276,6 +279,7 @@
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

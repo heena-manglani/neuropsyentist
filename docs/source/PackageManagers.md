@@ -35,18 +35,33 @@ To install anaconda, go to the <a href="https://www.anaconda.com/products/indivi
 ## Bread and Butter Commands
 
 Almighty "brew" commands
-* to find packages = "brew search"
-* to install = "brew install"
-* to remove = "brew uninstall"
+* Find package: 
 
+```bash
+brew search <package>
+```
+
+* Install:
+
+```bash
+brew install <package>
+```
+
+* Remove:
+
+```bash
+brew uninstall <package>
+```
 
 ## Need to Know
+
 * Homebrew is installed in /usr/local.  
 * Every time you open up the terminal, it will have access to our /usr/local/bin directory.  
 * Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local. 
 
 
 ## Upgrade
-```
+
+```bash
 brew upgrade
 ```
