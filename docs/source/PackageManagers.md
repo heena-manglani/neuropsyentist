@@ -41,11 +41,14 @@ To install anaconda, go to the <a href="https://www.anaconda.com/products/indivi
 ------
 ## Bread and Butter Commands
 
-Almighty "brew" commands
 * Find package: 
 
 ```bash
 brew search <package>
+```
+
+```bash
+conda search <package>
 ```
 
 * Install:
@@ -54,10 +57,18 @@ brew search <package>
 brew install <package>
 ```
 
+```bash
+conda install <package>
+```
+
 * Remove:
 
 ```bash
 brew uninstall <package>
+```
+
+```bash
+conda remove <package>
 ```
 
 ## Upgrade
@@ -65,3 +76,11 @@ brew uninstall <package>
 ```bash
 brew upgrade
 ```
+
+```bash
+conda upgrade conda
+```
+
+## Cheat Sheets
+<a href="https://devhints.io/homebrew" target="_blank" rel="noreferrer">Homebrew</a><br>
+<a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf" target="_blank" rel="noreferrer">Conda</a>
