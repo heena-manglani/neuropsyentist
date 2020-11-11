@@ -8,6 +8,7 @@ Command:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+To install anaconda, go to the <a href="https://www.anaconda.com/products/individual" target="_blank" rel="noreferrer">Anaconda site</a>, download the 64-Bit Graphical Installer OR the 64-Bit Command Line Installer.
 
 ## Need to Know
 
