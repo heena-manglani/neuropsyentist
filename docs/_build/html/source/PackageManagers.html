@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="VScode" href="VScode.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Neuropsyentist
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Neuropsyentist
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -83,11 +85,11 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="XCode.html">XCode</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Package Managers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#homebrew"><strong>Homebrew</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#need-to-know">Need to Know</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#need-to-know">Need to Know</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bread-and-butter-commands">Bread and Butter Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Need to Know</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#upgrade">Upgrade</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#anaconda">Anaconda</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="VScode.html">VScode</a></li>
@@ -98,6 +100,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -136,7 +139,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Package Managers</li>
     
@@ -160,6 +163,15 @@
   <div class="section" id="package-managers">
 <h1>Package Managers<a class="headerlink" href="#package-managers" title="Permalink to this headline">¶</a></h1>
 <p><a href="https://brew.sh/" target="_blank" rel="noreferrer">Homebrew</a>, <a href="https://docs.conda.io/en/latest/" target="_blank" rel="noreferrer">Anaconda</a>, and <a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noreferrer">Pip</a> are all package installer tools.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="need-to-know">
+<h2>Need to Know<a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
 <p><strong>Why do we need a package manager tool?</strong></p>
 <ul class="simple">
 <li><p>Softwares come with dependencies.</p></li>
@@ -173,10 +185,14 @@
 <p><strong>What’s the difference between homebrew vs anaconda vs pip?</strong></p>
 <ul class="simple">
 <li><p>Homebrew is a package manager tool for macOS and Linux.</p></li>
-<li><p>Anaconda distributes most of the popular scientific computing packages.</p></li>
+<li><p>Anaconda distributes most of the popular scientific computing packages.</p>
+<ul>
+<li><p>conda-forge: to install more packages</p></li>
+</ul>
+</li>
 <li><p>Pip is a package manager specific to the Python Package Index (PyPI).</p>
 <ul>
-<li><p>It installs all Python package dependecies as they are (regardless of whether they are compatible with existing packages).</p></li>
+<li><p>It installs all Python package dependencies as they are (regardless of whether they are compatible with existing packages).</p></li>
 </ul>
 </li>
 </ul>
@@ -186,13 +202,14 @@
 <li><p>If mac application, use brew.</p></li>
 <li><p>If python package, first try conda then conda-forge. If not, use pip.</p>
 <ul>
-<li><p>Remember, anaconda manages dependencies + versioning.</p></li>
+<li><p>Remember, anaconda manages dependencies and versions to keep packages compatible.</p></li>
 </ul>
 </li>
 </ul>
+</div>
 <hr class="docutils" />
-<div class="section" id="homebrew">
-<h2><strong>Homebrew</strong><a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bread-and-butter-commands">
+<h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
 <p>Almighty “brew” commands</p>
 <ul class="simple">
 <li><p>to find packages = “brew search”</p></li>
@@ -200,36 +217,19 @@
 <li><p>to remove = “brew uninstall”</p></li>
 </ul>
 </div>
-<div class="section" id="need-to-know">
-<h2>Need to Know<a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>Need to Know<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Homebrew is installed in /usr/local.</p></li>
 <li><p>Every time you open up the terminal, it will have access to our /usr/local/bin directory.</p></li>
 <li><p>Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local.</p></li>
 </ul>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="upgrade">
 <h2>Upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">upgrade</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="anaconda">
-<h2>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>conda = package manager</p>
-<ul>
-<li><p>conda-forge: to install more packages</p></li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
 
@@ -253,11 +253,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Heena Manglani &amp; Eric Terranova
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -268,7 +276,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

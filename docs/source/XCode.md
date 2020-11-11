@@ -8,7 +8,7 @@ XCode contains a suite of software development tools made by Apple.
 XCode provides access to a compiler, text editor and other tools.
 
 
-## **Installation**
+## Installation
 Open the terminal and enter this command:
 ```
 xcode-select --install
@@ -17,11 +17,11 @@ xcode-select --install
 * Here is an alternative link for the direct<a href="https://developer.apple.com/download/" target="_blank" rel="noreferrer"> download</a> from Apple.
 ------
 
-XQuartz
--------
+**XQuartz**
+-----------
 
 XQuartz is an open-source application that connects MacOS graphical frameworks to GUIs. 
 * XQuartz makes it possible to use GUIs. 
 
-## **Installation**
+## Installation
 To install XQuartz, go to the <a href="https://www.xquartz.org/" target="_blank" rel="noreferrer">XQuartz site</a>, download the .dmg, and add it to applications.
