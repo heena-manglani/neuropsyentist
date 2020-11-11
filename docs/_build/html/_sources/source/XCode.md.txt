@@ -14,7 +14,7 @@ Open the terminal and enter this command:
 xcode-select --install
 ```
 
-* If this does not work, here is a<a href="https://developer.apple.com/download/" target="_blank" rel="noreferrer"> direct download</a> from Apple.
+* Here is an alternative link for the direct<a href="https://developer.apple.com/download/" target="_blank" rel="noreferrer"> download</a> from Apple.
 ------
 
 XQuartz
