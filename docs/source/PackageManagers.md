@@ -83,5 +83,5 @@ conda upgrade conda
 
 ## Cheat Sheets
 <a href="https://devhints.io/homebrew" target="_blank" rel="noreferrer">Homebrew</a><br>
-<a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf" target="_blank" rel="noreferrer">Conda</a>
+<a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf" target="_blank" rel="noreferrer">Conda</a><br>
 <a href="https://opensource.com/sites/default/files/gated-content/cheat_sheet_pip.pdf" target="_blank" rel="noreferrer">Pip</a>
