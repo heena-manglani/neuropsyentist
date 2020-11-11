@@ -35,7 +35,7 @@ To install anaconda, go to the <a href="https://www.anaconda.com/products/indivi
 * Homebrew is installed in /usr/local.
   * Every time you open up the terminal, it will have access to our /usr/local/bin directory.  
   * Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local. 
-* Anaconda is installed in ~/opt directory when installing with the Graphical Installer
+* Anaconda is installed in ~/opt directory when installing with the Graphical Installer.
 
 
 ------
