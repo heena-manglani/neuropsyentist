@@ -29,8 +29,15 @@ To install anaconda, go to the <a href="https://www.anaconda.com/products/indivi
 * It depends on what kind of package you want to install.
 * If mac application, use brew.
 * If python package, first try conda then conda-forge. If not, use pip.
-    * Remember, anaconda manages dependencies and versions to keep packages compatible. 
-    
+    * Remember, anaconda manages dependencies and versions to keep packages compatible.
+
+**Installation Paths**
+* Homebrew is installed in /usr/local.
+  * Every time you open up the terminal, it will have access to our /usr/local/bin directory.  
+  * Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local. 
+* Anaconda is installed in ~/opt directory when installing with the Graphical Installer
+
+
 ------
 ## Bread and Butter Commands
 
@@ -52,13 +59,6 @@ brew install <package>
 ```bash
 brew uninstall <package>
 ```
-
-## Need to Know
-
-* Homebrew is installed in /usr/local.  
-* Every time you open up the terminal, it will have access to our /usr/local/bin directory.  
-* Installing a package using “brew” will install package in its own directory and then symlink it into /usr/local. 
-
 
 ## Upgrade
 
