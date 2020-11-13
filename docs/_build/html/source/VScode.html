@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Git" href="Git.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Neuropsyentist
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Neuropsyentist
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -80,14 +82,15 @@
               
             
             
-              <ul class="current">
+              <p class="caption"><span class="caption-text">Setting up your Mac</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="XCode.html">XCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PackageManagers.html">Package Managers</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">VScode</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>Installation</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#useful-commands"><strong>Useful Commands</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#must-have-extensions"><strong>Must have Extensions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#honorable-mentions"><strong>Honorable Mentions</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bread-and-butter-commands">Bread and Butter Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#must-have-extensions">Must-have Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#honorable-mentions">Honorable Mentions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
@@ -97,6 +100,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -135,7 +139,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>VScode</li>
     
@@ -158,75 +162,107 @@
             
   <div class="section" id="vscode">
 <h1>VScode<a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h1>
-<p>Visual Studio Code is an open-source code editor from Microsoft, available on Mac, Linux, and Windows. VS code comes with many tools for free- an integrated terminal, Intellisense (code completion), and Git integrations to name a few. One of the biggest strengths of vs code is the use of extensions. This transforms it into powerhouse that can add multiple languages, debuggers,and other tools. You can also customize the theme to fit you perfectly.</p>
-<div class="section" id="installation">
-<h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Visual Studio Code is an open-source code editor made by Microsoft.</p>
 <ul class="simple">
-<li><p>To Install Using brew</p></li>
+<li><p>VScode comes with many tools: an integrated terminal, Intellisense (code completion), and Git integrations.</p></li>
+<li><p>Extensions transform VScode into a powerhouse for using multiple languages, debuggers, themes, etc.</p></li>
+<li><p><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noreferrer"> Cheat Sheet</a></p></li>
 </ul>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><a href="https://code.visualstudio.com/docs?dv=osx" target="_blank" rel="noreferrer"> Direct download</a> or to install using brew:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew cask install visual-studio-code
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Here is a link for the direct<a href="https://code.visualstudio.com/docs?dv=osx" target="_blank" rel="noreferrer"> download</a></p></li>
+</li>
 </ul>
 </div>
-<div class="section" id="useful-commands">
-<h2><strong>Useful Commands</strong><a class="headerlink" href="#useful-commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bread-and-butter-commands">
+<h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p>Launching VS Code from the terminal</p>
-<ul>
-<li><p>Launch the current directory</p></li>
-<li><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code .
+<li><p>Launch VS code from the current directory of the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code .
+</pre></div>
+</div>
+</li>
+<li><p>Open command palette:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span> <span class="o">+</span> <span class="n">shift</span> <span class="o">+</span> <span class="n">p</span> 
+</pre></div>
+</div>
+</li>
+<li><p>Open integrated terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ctrl + ~
 </pre></div>
 </div>
 </li>
 </ul>
-</li>
-<li><p>Opening Command Palette</p>
-<ul class="simple">
-<li><p>Type in keywords for quick edits</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ctrl+shift+p</span></code></p></li>
-</ul>
-</li>
-<li><p>Open integrated terminal</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">ctrl+`</span></code></p></li>
-</ul>
-</li>
-<li><p><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noreferrer"> Cheat Sheet</a></p></li>
-</ul>
 </div>
 <div class="section" id="must-have-extensions">
-<h2><strong>Must have Extensions</strong><a class="headerlink" href="#must-have-extensions" title="Permalink to this headline">¶</a></h2>
+<h2>Must-have Extensions<a class="headerlink" href="#must-have-extensions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Python<br>
-<code class="docutils literal notranslate"><span class="pre">ms-python.python</span></code></p>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">ms-python.python</span></code></p>
 <ul>
-<li><p>This extension is essential for developing anything in Python and what will be used most.</p></li>
-<li><p>Features: Intellisense, Linting, Code Formatting, Debugging and most importantly, Jupyter Notebooks</p></li>
+<li><p>Essential for developing anything in Python.</p></li>
+<li><p>Features:</p>
+<ul>
+<li><p>Intellisense = auto-complete</p></li>
+<li><p>Linting = enforces a style guide</p></li>
+<li><p>Jupyter Notebooks = execute code in segments/cells</p></li>
 </ul>
 </li>
-<li><p>Community Material Theme<br>
-<code class="docutils literal notranslate"><span class="pre">equinusocio.vsc-community-material-theme</span></code></p>
+</ul>
+</li>
+<li><p>Community Material Theme: <code class="docutils literal notranslate"><span class="pre">equinusocio.vsc-community-material-theme</span></code></p>
 <ul>
-<li><p>There are hundreds of themes out there to customize vs code. This is just a solid one that has a few different themes to get started.</p></li>
-<li><p>You can even create your own!</p></li>
+<li><p>Fit your style using preset themes or make your own!</p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="honorable-mentions">
-<h2><strong>Honorable Mentions</strong><a class="headerlink" href="#honorable-mentions" title="Permalink to this headline">¶</a></h2>
+<h2>Honorable Mentions<a class="headerlink" href="#honorable-mentions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Live Server- <code class="docutils literal notranslate"><span class="pre">ritwickdey.liveserver</span></code> -This will start up a local, hot-reloadable server for front-end development work.</p></li>
-<li><p>Live Share- <code class="docutils literal notranslate"><span class="pre">ms-vsliveshare.vsliveshare</span></code> -Enables collaboration in real-time without being co-located.</p></li>
-<li><p>Markdown Linter- <code class="docutils literal notranslate"><span class="pre">davidanson.vscode-markdownlint</span></code>- Markdown best practices</p></li>
-<li><p>Git Lens- <code class="docutils literal notranslate"><span class="pre">eamodio.gitlens</span></code>- advanced git tracking.</p></li>
-<li><p>Code Spell Checker- <code class="docutils literal notranslate"><span class="pre">streetsidesoftware.code-spell-checker</span></code>- spell checker, can be annoying.</p></li>
-<li><p>Remote Development- <code class="docutils literal notranslate"><span class="pre">ms-vscode-remote.vscode-remote-extensionpack</span></code>- open folders in a container</p></li>
-<li><p>Docker- <code class="docutils literal notranslate"><span class="pre">ms-azuretools.vscode-docker</span></code>- manage docker containers.</p></li>
-<li><p>Anaconda Extension- <code class="docutils literal notranslate"><span class="pre">ms-python.anaconda-extension-pack</span></code>- manage anaconda settings and envs.</p></li>
+<li><p>Live Server: <code class="docutils literal notranslate"><span class="pre">ritwickdey.liveserver</span></code></p>
+<ul>
+<li><p>Start up a local, hot-reloadable server for front-end development work</p></li>
+</ul>
+</li>
+<li><p>Live Share: <code class="docutils literal notranslate"><span class="pre">ms-vsliveshare.vsliveshare</span></code></p>
+<ul>
+<li><p>Enables collaboration in real-time without being co-located</p></li>
+</ul>
+</li>
+<li><p>Markdown Linter: <code class="docutils literal notranslate"><span class="pre">davidanson.vscode-markdownlint</span></code></p>
+<ul>
+<li><p>Best styling practices</p></li>
+</ul>
+</li>
+<li><p>Git Lens: <code class="docutils literal notranslate"><span class="pre">eamodio.gitlens</span></code></p>
+<ul>
+<li><p>Advanced git tracking (see who edited what and when)</p></li>
+</ul>
+</li>
+<li><p>Code Spell Checker: <code class="docutils literal notranslate"><span class="pre">streetsidesoftware.code-spell-checker</span></code></p>
+<ul>
+<li><p>Basic spell checker</p></li>
+</ul>
+</li>
+<li><p>Remote Development: <code class="docutils literal notranslate"><span class="pre">ms-vscode-remote.vscode-remote-extensionpack</span></code></p>
+<ul>
+<li><p>Open folders in a container</p></li>
+</ul>
+</li>
+<li><p>Docker: <code class="docutils literal notranslate"><span class="pre">ms-azuretools.vscode-docker</span></code></p>
+<ul>
+<li><p>Manage docker containers.</p></li>
+</ul>
+</li>
+<li><p>Anaconda Extension: <code class="docutils literal notranslate"><span class="pre">ms-python.anaconda-extension-pack</span></code></p>
+<ul>
+<li><p>Manage anaconda settings and envs.</p></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -251,11 +287,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Heena Manglani &amp; Eric Terranova
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -266,7 +310,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

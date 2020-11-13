@@ -1,54 +1,64 @@
 VScode
 ======
 
-Visual Studio Code is an open-source code editor from Microsoft, available on Mac, Linux, and Windows. VS code comes with many tools for free- an integrated terminal, Intellisense (code completion), and Git integrations to name a few. One of the biggest strengths of vs code is the use of extensions. This transforms it into powerhouse that can add multiple languages, debuggers,and other tools. You can also customize the theme to fit you perfectly.
+Visual Studio Code is an open-source code editor made by Microsoft. 
 
-## **Installation**
-
-* To Install Using brew
-
-```bash
-brew cask install visual-studio-code
-```
-
-* Here is a link for the direct<a href="https://code.visualstudio.com/docs?dv=osx" target="_blank" rel="noreferrer"> download</a>
-
-## **Useful Commands**
-
-* Launching VS Code from the terminal
-  * Launch the current directory
-  * ```bash
-    code .
-    ```
-
-* Opening Command Palette
-  * Type in keywords for quick edits 
-  * ``` ctrl+shift+p ```
-
-* Open integrated terminal
-  * ``` ctrl+` ```
-
+* VScode comes with many tools: an integrated terminal, Intellisense (code completion), and Git integrations.
+* Extensions transform VScode into a powerhouse for using multiple languages, debuggers, themes, etc.
 * <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noreferrer"> Cheat Sheet</a>
 
-## **Must have Extensions**
+## Installation
 
-* Python<br>
-`ms-python.python`
-  * This extension is essential for developing anything in Python and what will be used most.
-  * Features: Intellisense, Linting, Code Formatting, Debugging and most importantly, Jupyter Notebooks
+* <a href="https://code.visualstudio.com/docs?dv=osx" target="_blank" rel="noreferrer"> Direct download</a> or to install using brew:
 
-* Community Material Theme<br>
-`equinusocio.vsc-community-material-theme`
-  * There are hundreds of themes out there to customize vs code. This is just a solid one that has a few different themes to get started.
-  * You can even create your own!
+  ```bash
+  brew cask install visual-studio-code
+  ```
 
-## **Honorable Mentions**
+## Bread and Butter Commands
 
-* Live Server- `ritwickdey.liveserver` -This will start up a local, hot-reloadable server for front-end development work.
-* Live Share- `ms-vsliveshare.vsliveshare` -Enables collaboration in real-time without being co-located.
-* Markdown Linter- `davidanson.vscode-markdownlint`- Markdown best practices
-* Git Lens- `eamodio.gitlens`- advanced git tracking.
-* Code Spell Checker- `streetsidesoftware.code-spell-checker`- spell checker, can be annoying.
-* Remote Development- `ms-vscode-remote.vscode-remote-extensionpack`- open folders in a container
-* Docker- `ms-azuretools.vscode-docker`- manage docker containers.
-* Anaconda Extension- `ms-python.anaconda-extension-pack`- manage anaconda settings and envs.
+* Launch VS code from the current directory of the terminal:
+  ```bash
+  code .
+  ```
+
+* Open command palette:
+  ```
+  cmd + shift + p 
+  ```
+
+* Open integrated terminal:
+  ```bash
+  ctrl + ~
+  ```
+
+## Must-have Extensions
+
+* Python: `ms-python.python`
+  * Essential for developing anything in Python.
+  * Features: 
+    * Intellisense = auto-complete
+    * Linting = enforces a style guide
+    * Jupyter Notebooks = execute code in segments/cells
+
+* Community Material Theme: `equinusocio.vsc-community-material-theme`
+  * Fit your style using preset themes or make your own!
+
+## Honorable Mentions
+
+* Live Server: `ritwickdey.liveserver`
+  * Start up a local, hot-reloadable server for front-end development work
+* Live Share: `ms-vsliveshare.vsliveshare` 
+  * Enables collaboration in real-time without being co-located
+* Markdown Linter: `davidanson.vscode-markdownlint`
+  * Best styling practices
+* Git Lens: `eamodio.gitlens`
+  * Advanced git tracking (see who edited what and when)
+* Code Spell Checker: `streetsidesoftware.code-spell-checker`
+  * Basic spell checker
+* Remote Development: `ms-vscode-remote.vscode-remote-extensionpack`
+  * Open folders in a container
+* Docker: `ms-azuretools.vscode-docker`
+  * Manage docker containers.
+* Anaconda Extension: `ms-python.anaconda-extension-pack`
+  * Manage anaconda settings and envs.
