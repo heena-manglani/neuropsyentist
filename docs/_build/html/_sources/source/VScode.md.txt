@@ -34,17 +34,17 @@ brew cask install visual-studio-code
 
 * Python<br>
 `ms-python.python`
-  * This extension is essential for developing anything in Python and what you will use most.
-  * Features: Intellisense, Linting, Code Formatting, Debugging and most importantly for us, Jupyter Notebooks
+  * This extension is essential for developing anything in Python and what will be used most.
+  * Features: Intellisense, Linting, Code Formatting, Debugging and most importantly, Jupyter Notebooks
 
 * Community Material Theme<br>
 `equinusocio.vsc-community-material-theme`
-  * There are hundreds of themes out there for you to customize vs code. This is just a solid one that has a few different themes to get you started.
+  * There are hundreds of themes out there to customize vs code. This is just a solid one that has a few different themes to get started.
   * You can even create your own!
 
 ## **Honorable Mentions**
 
-* Live Server- `ritwickdey.liveserver` -This is will start up a local, hot-reloadable server for front-end development work.
+* Live Server- `ritwickdey.liveserver` -This will start up a local, hot-reloadable server for front-end development work.
 * Live Share- `ms-vsliveshare.vsliveshare` -Enables collaboration in real-time without being co-located.
 * Markdown Linter- `davidanson.vscode-markdownlint`- Markdown best practices
 * Git Lens- `eamodio.gitlens`- advanced git tracking.
