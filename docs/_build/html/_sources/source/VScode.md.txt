@@ -3,7 +3,7 @@ VScode
 
 Visual Studio Code is an open-source code editor made by Microsoft. 
 
-* VScode comes with many tools: an integrated terminal, Intellisense (code completion), and Git integrations.
+* VScode comes with many tools: an integrated terminal, Intellisense (code completion), and Git integration.
 * Extensions transform VScode into a powerhouse for using multiple languages, debuggers, themes, etc.
 * <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noreferrer"> Cheat Sheet</a>
 
