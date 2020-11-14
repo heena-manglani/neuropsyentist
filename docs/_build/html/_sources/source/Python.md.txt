@@ -16,8 +16,8 @@ To install the latest version of Python, go to <a href="https://www.python.org/d
 
 --------------------
 
-Bread and Butter Libraries for Data Science  
----------------------------------
+Bread and Butter Libraries 
+--------------------------
 
 **Data Organization & Processing**
 * [Pandas](https://pandas.pydata.org/): organize, manipulate, plot single column series data, and data frames tables
