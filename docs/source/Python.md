@@ -9,7 +9,7 @@ Powerful programming language, well-maintained by development team. Check out th
 * Some libraries are built upon others--they add functionality to already existing functions.
 * [Resources for learning how to use Python for data science](https://jakevdp.github.io/PythonDataScienceHandbook/)
 
-## **Installation**
+## Installation
 To install the latest version of Python, go to the [Python for Mac](https://www.python.org/downloads/mac-osx/), download the macOS 64-bit installer, and follow prompts.
 
 --------------------
@@ -35,6 +35,4 @@ Machine Learning/AI
 * [Keras](https://keras.io/): neural network library
     * TensorFlow’s high-level API for building and training Deep Neural Network code
     * Statistical modeling but with images + text
-    * Think linear regression, correlation, OLS, GLM (what you might do in SPSS). 
-
-
+    * Think linear regression, correlation, OLS, GLM (what you might do in SPSS).
