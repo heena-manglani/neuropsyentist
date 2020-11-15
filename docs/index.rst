@@ -18,7 +18,8 @@ Welcome to Neuropsyentist's documentation!
    source/PackageManagers.md
    source/VScode.md
    source/Python.md
-   source/Git.md   
+   source/Git.md  
+ 
 
    :caption: Contents:
 

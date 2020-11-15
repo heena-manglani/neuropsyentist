@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,18 +12,12 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -34,6 +29,10 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Python" href="Python.html" /> 
@@ -50,7 +49,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Neuropsyentist
+            <a href="../index.html" class="icon icon-home"> Neuropsyentist
           
 
           
@@ -73,7 +72,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -90,6 +88,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Git</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#need-to-know">Need to Know</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#necessary-configuration">Necessary configuration:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#initial-set-up">Initial Set-Up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bread-and-butter-commands">Bread and Butter Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#best-practices">Best practices</a></li>
@@ -100,7 +99,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -139,7 +137,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>Git</li>
     
@@ -198,6 +196,17 @@
 </ul>
 </div>
 <hr class="docutils" />
+<div class="section" id="necessary-configuration">
+<h2>Necessary configuration:<a class="headerlink" href="#necessary-configuration" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>User name and emails can be set for a single repository and globally.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Name&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">email</span><span class="nd">@email</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
 <div class="section" id="initial-set-up">
 <h2>Initial Set-Up<a class="headerlink" href="#initial-set-up" title="Permalink to this headline">¶</a></h2>
 <p>Either pull/clone a remote repository existing on Git to your local machine OR take an existing directory on your local and initialize it with Git.</p>
@@ -238,15 +247,6 @@
 </div>
 </li>
 </ol>
-<p>Necessary configuration:</p>
-<ul>
-<li><p>User name and emails can be set for a single repository and globally.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Name&quot;</span>
-<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">email</span><span class="nd">@email</span><span class="o">.</span><span class="n">com</span>
-</pre></div>
-</div>
-</li>
-</ul>
 </div>
 <div class="section" id="bread-and-butter-commands">
 <h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
@@ -286,17 +286,18 @@
 </pre></div>
 </div>
 </li>
-<li><p>To <strong>create a new branch</strong> and move into its:</p>
+<li><p>To <strong>create a new branch</strong> and move into it:</p>
 <ul>
 <li><p>-b flag creates the branch.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b &lt;branch name&gt;
+git checkout &lt;branch name&gt;
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p>To <strong>checkout or move</strong> into an an existing branch:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout &lt;branch name&gt;
+<li><p>To list all branches:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch -a
 </pre></div>
 </div>
 </li>
@@ -338,19 +339,11 @@
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Heena Manglani &amp; Eric Terranova
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -361,6 +354,7 @@
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

@@ -28,6 +28,13 @@ brew install git
 * <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank" rel="noreferrer">Git Cheat Sheet</a>
 
 --------
+## Necessary configuration:
+* User name and emails can be set for a single repository and globally. 
+    ```
+    git config --global user.name "Name"
+    git config --global user.email email@email.com
+    ```
+
 ## Initial Set-Up
 Either pull/clone a remote repository existing on Git to your local machine OR take an existing directory on your local and initialize it with Git.  
 
@@ -63,12 +70,6 @@ To initialize a local repository:
     git push -u origin main
     ```
 
-Necessary configuration:
-* User name and emails can be set for a single repository and globally. 
-    ```
-    git config --global user.name "Name"
-    git config --global user.email email@email.com
-    ```
 
 ## Bread and Butter Commands
 * To see all modified files and their <strong>status</strong> (changed, addded, deleted, commited):
@@ -103,15 +104,16 @@ Necessary configuration:
     git push <remote repository>
     ```
 
-* To <strong>create a new branch</strong> and move into its:
+* To <strong>create a new branch</strong> and move into it:
   * -b flag creates the branch.
       ```bash
       git checkout -b <branch name>
+      git checkout <branch name>
       ```
 
-* To <strong>checkout or move</strong> into an an existing branch:
+* To list all branches:
     ```bash
-    git checkout <branch name>
+    git branch -a
     ```
 
 ## Best practices
