@@ -38,12 +38,12 @@ brew install git
 ## Initial Set-Up
 Either pull/clone a remote repository existing on Git to your local machine OR take an existing directory on your local and initialize it with Git.  
 
-To clone an existing remote repository in the current directory:
+**To clone an existing remote repository in the current directory:**
 ```bash
 git clone https://github.com/user-name/repo-name.git
 ```
 
-To initialize a local repository:
+**To initialize a local repository:**
 
 1. Configure the directory to be a .git directory:
     ```bash
