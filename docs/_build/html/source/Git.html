@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Python" href="Python.html" /> 
@@ -49,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Neuropsyentist
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Neuropsyentist
           
 
           
@@ -72,6 +73,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -88,11 +90,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Git</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#need-to-know">Need to Know</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#best-practices">Best practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#initial-set-up">Initial Set-Up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bread-and-butter-commands">Bread and Butter Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cloning-an-existing-repository">Cloning an Existing Repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#initialize-a-repository">Initialize A Repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-config">User config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#best-practices">Best practices</a></li>
 </ul>
 </li>
 </ul>
@@ -100,6 +100,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -138,7 +139,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Git</li>
     
@@ -161,136 +162,159 @@
             
   <div class="section" id="git">
 <h1>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
-<p>Git is a version control system that allows multiple people to collaborate on a project without interfering (too much!) with each other’s work. If someone changes a file (i.e. writes to it or deletes from it), git records the differences between the new version and the old version, and maintains a history.</p>
+<ul class="simple">
+<li><p>Git is a version control system.</p>
+<ul>
+<li><p>What’s that? A version control system records changes to a file.</p></li>
+<li><p>If someone changes a file (i.e. writes to it or deletes from it), git records the differences between the new version and the old version, and maintains a history.</p></li>
+</ul>
+</li>
+<li><p>Multiple people can collaborate on a project and each person’s changes are documented. Fosters collaboration!</p></li>
+<li><p><a href="https://git-scm.com/doc" target="_blank" rel="noreferrer">Documentation</a></p></li>
+</ul>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Command:</p>
+<p>Before installing check to see whether you have git:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>To install:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">git</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Documentation can be found here: <a href="https://git-scm.com/doc" target="_blank" rel="noreferrer">git-scm.com/doc</a></p></li>
-</ul>
 </div>
 <div class="section" id="need-to-know">
 <h2>Need to Know<a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>MacOS comes with git preinstalled in /usr/bin/git</p></li>
-<li><p>Git also allows you to create <i>branches.</i> This allows you to create separate workflows out of the same version history without worrying about messing up someone else’s work. You can then <i>merge</i> them back together for a complete project.</p></li>
+<li><p>How to work with others?</p>
+<ul>
+<li><p>Git allows you to create <i>branches</i>.</p></li>
+<li><p>Branches can serve as separate workflows out of the same parent version which you can then <i>merge</i> back with <i>main</i> to update the parent code.</p></li>
+</ul>
+</li>
+<li><p>Found an error? Fantastic. Git lets you revert back to a previous version.</p></li>
 <li><p><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank" rel="noreferrer">Git Cheat Sheet</a></p></li>
 </ul>
 </div>
-<div class="section" id="best-practices">
-<h2>Best practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p><strong>Pull Before Push</strong> You should always pull from the branch you are working on to make sure that you have the most recent version of the remote (i.e. Github) repository. This lets you deal with merge conflicts locally on your machine rather than in your remote repository.</p></li>
-<li><p><strong>Push Only Working Code (POWC)</strong> You should always only push working code to your remote repository so that if someone else <i>checksout</i> your branch, the code runs.</p></li>
-<li><p>Main and develop should generally not be pushed directly to. For this you would use a branch and then merge your code into develop, then main.</p>
-<ul>
-<li><p>To create a new branch and checkout. -b flag tells git to create the branch then checkout</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b &lt;branch name&gt;
-</pre></div>
-</div>
-</li>
-<li><p>Checkout an existing branch</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout &lt;branch name&gt;
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="bread-and-butter-commands">
-<h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>This is the most common workflow commands using git. The majority of your git work will be using these commands.</p></li>
-<li><p>This will show you all of the files that are being tracked by git and their status–changed, addded, deleted– and if they have been commited yet.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
-</pre></div>
-</div>
-</li>
-<li><p>This will pull the remote repository down to your local machine for changes to be made</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="o">&lt;</span><span class="n">remote</span> <span class="n">repository</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</li>
-<li><p>This will add the files you have modified to be commited. You can choose what files/directories to add. You can also add all of the files simply saying “git add .”</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">&lt;</span><span class="n">files</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</li>
-<li><p>This is a staging area before publishing the changes to the remote repository for everyone working on the project to see. The -m flag is adding a message telling others what the changes you made do. These messages are permanent and will be kept in the history of your repository <strong>forever</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;&lt;message&gt;&quot;</span>
-</pre></div>
-</div>
-</li>
-<li><p>This will publish your changes to your remote repository for others on your project to use, see, and change.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">&lt;</span><span class="n">remote</span> <span class="n">repository</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</div>
-<div class="section" id="cloning-an-existing-repository">
-<h2>Cloning an Existing Repository<a class="headerlink" href="#cloning-an-existing-repository" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>Pull an existing remote repository to your local machine</p></li>
-<li><p>Create a directory to hold your repo</p></li>
-<li><p>Clone the repo in the current directory</p>
+<hr class="docutils" />
+<div class="section" id="initial-set-up">
+<h2>Initial Set-Up<a class="headerlink" href="#initial-set-up" title="Permalink to this headline">¶</a></h2>
+<p>Either pull/clone a remote repository existing on Git to your local machine OR take an existing directory on your local and initialize it with Git.</p>
+<p>To clone an existing remote repository in the current directory:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/user-name/repo-name.git
 </pre></div>
 </div>
-</li>
-</ul>
-</div>
-<div class="section" id="initialize-a-repository">
-<h2>Initialize A Repository<a class="headerlink" href="#initialize-a-repository" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>Initialize a blank repository locally.</p>
-<ul>
-<li><p>Creates a .git directory which sets up the configuration and ability for version control</p>
+<p>To initialize a local repository:</p>
+<ol>
+<li><p>Configure the directory to be a .git directory:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git init
 </pre></div>
 </div>
 </li>
-<li><p>Adds the README file to the files currently tracked by git (README is used as an introduction or documentation for a project)</p>
+<li><p>Add a README file to the files currently tracked by git:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add README.md
 </pre></div>
 </div>
 </li>
-<li><p>Commits the added files so they are now tracked at this point.</p>
+<li><p>Commit the added files so they are now tracked:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git commit -m <span class="s2">&quot;first commit&quot;</span>
 </pre></div>
 </div>
 </li>
-<li><p>Rename the branch to main</p>
+<li><p>Rename the branch to main:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch -M main
 </pre></div>
 </div>
 </li>
-<li><p>Add the remote (i.e. Github) tracking.</p>
+<li><p>Add the remote (i.e. Github) tracking:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add origin https://github.com/user-name/testrepo.git
 </pre></div>
 </div>
 </li>
-<li><p>Push the staged commit to the remote branch main. -u flag is set-upstream</p>
+<li><p>Push the staged commit to the remote branch main (-u flag is set-upstream)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push -u origin main
 </pre></div>
 </div>
 </li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="user-config">
-<h2>User config<a class="headerlink" href="#user-config" title="Permalink to this headline">¶</a></h2>
+</ol>
+<p>Necessary configuration:</p>
 <ul>
 <li><p>User name and emails can be set for a single repository and globally.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Name&quot;</span>
 <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">email</span><span class="nd">@email</span><span class="o">.</span><span class="n">com</span>
 </pre></div>
 </div>
+</li>
+</ul>
+</div>
+<div class="section" id="bread-and-butter-commands">
+<h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>To see all modified files and their <strong>status</strong> (changed, addded, deleted, commited):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
+</pre></div>
+</div>
+</li>
+<li><p>To <strong>pull</strong> the remote repository down to local machine:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="o">&lt;</span><span class="n">remote</span> <span class="n">repository</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>To <strong>add</strong> specific files/directories to be commited.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>To <strong>add all</strong> the files to be commited.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p>To <strong>stage</strong> your changes before publishing them:</p>
+<ul>
+<li><p>The -m flag adds a message describing the changes.</p></li>
+<li><p>These messages are permanent and will be kept in the history of your repository <strong>forever!</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;&lt;message&gt;&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>To <strong>publish</strong> your changes to your remote repository for others to use, see, and change:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">&lt;</span><span class="n">remote</span> <span class="n">repository</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>To <strong>create a new branch</strong> and move into its:</p>
+<ul>
+<li><p>-b flag creates the branch.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b &lt;branch name&gt;
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>To <strong>checkout or move</strong> into an an existing branch:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout &lt;branch name&gt;
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="best-practices">
+<h2>Best practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Pull Before Push</strong> Always pull from the branch you are working on to make sure that you have the most recent version of the remote (i.e., Github) repository.</p>
+<ul>
+<li><p>This lets you deal with merge conflicts locally on your machine rather than in your remote repository.</p></li>
+</ul>
+</li>
+<li><p><strong>Push Only Working Code (POWC)</strong> Only push functional code to your remote repository so that when others <i>checkout</i> your branch, the code works.</p>
+<ul>
+<li><p>Main and develop should generally not be pushed directly to.</p></li>
+<li><p>Merge your code into a develop branch instead and have someone else ensure it works before changing the parent code (main).</p></li>
+</ul>
 </li>
 </ul>
 </div>
@@ -314,11 +338,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Heena Manglani &amp; Eric Terranova
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -329,7 +361,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
