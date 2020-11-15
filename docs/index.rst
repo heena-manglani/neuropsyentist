@@ -18,13 +18,8 @@ Welcome to Neuropsyentist's documentation!
    source/PackageManagers.md
    source/VScode.md
    source/Python.md
-<<<<<<< HEAD
-   source/Git.md  
- 
-=======
    source/Git.md   
    source/VirtualEnvs.md
->>>>>>> 0acbf2eca9c8da88528a26f5894228500e14effe
 
    :caption: Contents:
 
