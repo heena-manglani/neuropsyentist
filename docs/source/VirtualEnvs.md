@@ -10,20 +10,19 @@ Tool to manage and isolate project dependencies. <a href="https://docs.conda.io/
 
 
 ## Bread and Butter Commands
-To <strong>create</strong> a virtual env, execute the venv module (part of the Python standard lib):
+To <strong>create</strong> a virtual env:
 ```
-conda create --name phd python=3.8 <package name>
+conda create --name <name> python=3.8 <package>
 ```
+To <strong>activate</strong> a virtual env:
+```
+conda activate <name>
+````
 
 <strong>Install</strong> a package to the virtual env:
 ```
-conda install -n phd numpy
+conda install numpy
 ```
-
-To <strong>activate</strong> a virtual env:
-```
-conda activate phd
-````
 
 To <strong>export</strong> your env:
 ```
@@ -44,7 +43,7 @@ conda env list
 
 To <strong>exit</strong> the env:
 ```
-source deactivate
+conda deactivate
 ```
 
 ## Need to Know

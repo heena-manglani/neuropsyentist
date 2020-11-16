@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Virtual Envs &mdash; Neuropsyentist 0.0.1 documentation</title>
+  <title>Virtualenvs &mdash; Neuropsyentist 0.0.1 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,7 +20,9 @@
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,12 +34,10 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Customization" href="Customization.html" />
+    <link rel="prev" title="Git" href="Git.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -48,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Neuropsyentist
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Neuropsyentist
           
 
           
@@ -71,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -79,16 +83,24 @@
             
             
               <p class="caption"><span class="caption-text">Setting up your Mac</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="XCode.html">XCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PackageManagers.html">Package Managers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="VScode.html">VScode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Virtualenvs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bread-and-butter-commands">Bread and Butter Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#need-to-know">Need to Know</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Customization.html">Customization</a></li>
 </ul>
 
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -127,15 +139,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Virtual Envs</li>
+      <li>Virtualenvs</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/source/VirtualEnvs.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/source/Virtualenvs.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -148,8 +160,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="virtual-envs">
-<h1>Virtual Envs<a class="headerlink" href="#virtual-envs" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="virtualenvs">
+<h1>Virtualenvs<a class="headerlink" href="#virtualenvs" title="Permalink to this headline">¶</a></h1>
+<p>Tool to manage and isolate project dependencies. <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands" target="_blank" rel="noreferrer">Documentation</a></p>
+<ul class="simple">
+<li><p>Reproducibility crisis no more!</p>
+<ul>
+<li><p>Have all of the packages you need for a specific project in the exact version needed.</p></li>
+<li><p>Share your env including all packages and their dependencies.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="bread-and-butter-commands">
+<h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
+<p>To <strong>create</strong> a virtual env, execute the venv module (part of the Python standard lib):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">phd</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.8</span> <span class="o">&lt;</span><span class="n">package</span> <span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Install</strong> a package to the virtual env:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span>
+</pre></div>
+</div>
+<p>To <strong>activate</strong> a virtual env:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">phd</span>
+</pre></div>
+</div>
+<p>To <strong>export</strong> your env:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">phd</span>
+<span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>To <strong>duplicate</strong> someone else’s env:</p>
+<ul class="simple">
+<li><p>pull their repo, create a virtual env, and install its dependencies</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>To <strong>view</strong> a list of your envs:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
+</pre></div>
+</div>
+<p>To <strong>exit</strong> the env:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">deactivate</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="need-to-know">
+<h2>Need to Know<a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Virtual envs will live in your home dir ~/envs/.</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -158,16 +220,33 @@
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Customization.html" class="btn btn-neutral float-right" title="Customization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Git.html" class="btn btn-neutral float-left" title="Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Heena Manglani &amp; Eric Terranova
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -178,7 +257,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
