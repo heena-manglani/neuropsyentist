@@ -1,4 +1,4 @@
-Virtualenv
+Virtualenvs
 ============
 
 Tool to manage and isolate project dependencies.
