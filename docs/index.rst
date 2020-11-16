@@ -19,7 +19,8 @@ Welcome to Neuropsyentist's documentation!
    source/VScode.md
    source/Python.md
    source/Git.md   
-   source/VirtualEnvs.md
+   source/Virtualenv.md
+   source/Customization.md
 
    :caption: Contents:
 
