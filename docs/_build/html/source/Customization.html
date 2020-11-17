@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Git" href="Git.html" /> 
+    <link rel="prev" title="Virtualenvs" href="VirtualEnvs.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,6 +86,7 @@
 <li class="toctree-l1"><a class="reference internal" href="VScode.html">VScode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VirtualEnvs.html">Virtualenvs</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Customization</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#oh-my-zsh"><strong>Oh My Zsh</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
@@ -182,7 +183,7 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
 </pre></div>
 </div>
-<ul>
+</li>
 <li><p>Auto highlighting commands</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-syntax-highlighting
 </pre></div>
@@ -192,8 +193,6 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/zsh-users/zsh-completions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="p">:=~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-completions
 </pre></div>
 </div>
-</li>
-</ul>
 </li>
 </ul>
 </div>
@@ -209,13 +208,31 @@ To update, in the terminal enter:</p>
 </pre></div>
 </div>
 <p>Add this into the plugins section:
-<code class="docutils literal notranslate"><span class="pre">json</span> <span class="pre">plugins=(</span> <span class="pre">git</span> <span class="pre">zsh-autosuggestions</span> <span class="pre">zsh-syntax-highlighting</span> <span class="pre">zsh-completions</span> <span class="pre">)</span> </code>
+<code class="docutils literal notranslate"><span class="pre">plugins=(</span> <span class="pre">git</span> <span class="pre">zsh-autosuggestions</span> <span class="pre">zsh-syntax-highlighting</span> <span class="pre">zsh-completions</span> <span class="pre">)</span></code>
 To change the zsh_theme</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;powerlevel10k/powerlevel10k&quot;</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Anaconda</p></li>
+<ul>
+<li><p>This is added to bash_profile when anaconda is installed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># &gt;&gt;&gt; conda initialize &gt;&gt;&gt;
+# !! Contents within this block are managed by &#39;conda init&#39; !!
+__conda_setup=&quot;$(&#39;/opt/anaconda3/bin/conda&#39; &#39;shell.bash&#39; &#39;hook&#39; 2&gt; /dev/null)&quot;
+if [ $? -eq 0 ]; then
+    eval &quot;$__conda_setup&quot;
+else
+    if [ -f &quot;/opt/anaconda3/etc/profile.d/conda.sh&quot; ]; then
+        . &quot;/opt/anaconda3/etc/profile.d/conda.sh&quot;
+    else
+        export PATH=&quot;/opt/anaconda3/bin:$PATH&quot;
+    fi
+fi
+unset __conda_setup
+# &lt;&lt;&lt; conda initialize &lt;&lt;&lt;
+</pre></div>
+</div>
+</li>
+<li><p>Close and re-open Terminal to go through powerlevel10k installation.</p></li>
 </ul>
 </div>
 </div>
@@ -229,7 +246,7 @@ To change the zsh_theme</p>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="Git.html" class="btn btn-neutral float-left" title="Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="VirtualEnvs.html" class="btn btn-neutral float-left" title="Virtualenvs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

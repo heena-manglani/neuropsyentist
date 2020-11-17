@@ -26,14 +26,14 @@ conda install numpy
 
 To <strong>export</strong> your env:
 ```
-conda activate phd
+conda activate <name>
 conda env export > environment.yml
 ```
 
 To <strong>duplicate</strong> someone else's env:
-* pull their repo, create a virtual env, and install its dependencies
+* pull their repo. Then create a virtual env, and install its dependencies
 ```
-pip install -r requirements.txt
+conda install -n <env_name> environment.yml
 ```
 
 To <strong>view</strong> a list of your envs:

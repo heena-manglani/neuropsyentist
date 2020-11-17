@@ -26,7 +26,7 @@ Oh My Zsh is a framework that wraps your zsh terminal and allows the use of plug
     ```bash
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     ```
-
+  
   * Auto Completions commands in the terminal
     ```bash
     git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
