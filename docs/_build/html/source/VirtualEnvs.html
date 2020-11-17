@@ -171,27 +171,15 @@
 <div class="section" id="bread-and-butter-commands">
 <h2>Bread and Butter Commands<a class="headerlink" href="#bread-and-butter-commands" title="Permalink to this headline">¶</a></h2>
 <p>To <strong>create</strong> a virtual env:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.8</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.8</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>To <strong>activate</strong> a virtual env:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p><strong>Install</strong> a package to the virtual env:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span>
-</pre></div>
-</div>
-<p>To <strong>export</strong> your env:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span>
-<span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
-</pre></div>
-</div>
-<p>To <strong>duplicate</strong> someone else’s env:</p>
-<ul class="simple">
-<li><p>pull their repo. Then create a virtual env, and install its dependencies</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">n</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>
 </div>
 <p>To <strong>view</strong> a list of your envs:</p>
@@ -202,12 +190,40 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">deactivate</span>
 </pre></div>
 </div>
+<p>To <strong>export</strong> your env:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span>
+<span class="n">conda</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>To <strong>duplicate</strong> an existing env:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">n</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="need-to-know">
 <h2>Need to Know<a class="headerlink" href="#need-to-know" title="Permalink to this headline">¶</a></h2>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <ul class="simple">
-<li><p>Virtual envs will live in your home dir /opt/anaconda3/envs/.</p></li>
+<li><p>Virtual envs will live in your home dir /opt/anaconda3/envs/.
+=======</p></li>
+<li><p>Virtual envs will live in your home dir ~/envs/.</p></li>
 </ul>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>4292137ddb7d11e89095522d60c0f538a76c0de0</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
 </div>
 </div>
 

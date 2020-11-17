@@ -12,28 +12,16 @@ Tool to manage and isolate project dependencies. <a href="https://docs.conda.io/
 ## Bread and Butter Commands
 To <strong>create</strong> a virtual env:
 ```
-conda create --name <name> python=3.8 <package>
+conda create --name <env_name> python=3.8 <package>
 ```
 To <strong>activate</strong> a virtual env:
 ```
-conda activate <name>
+conda activate <env_name>
 ````
 
 <strong>Install</strong> a package to the virtual env:
 ```
 conda install numpy
-```
-
-To <strong>export</strong> your env:
-```
-conda activate <name>
-conda env export > environment.yml
-```
-
-To <strong>duplicate</strong> someone else's env:
-* pull their repo. Then create a virtual env, and install its dependencies
-```
-conda install -n <env_name> environment.yml
 ```
 
 To <strong>view</strong> a list of your envs:
@@ -46,5 +34,21 @@ To <strong>exit</strong> the env:
 conda deactivate
 ```
 
+To <strong>export</strong> your env:
+```
+conda activate <env_name>
+conda <env_name> export > environment.yml
+```
+
+To <strong>duplicate</strong> an existing env:
+```
+conda install -n <env_name> environment.yml
+conda activate <env_name>
+```
+
 ## Need to Know
+<<<<<<< HEAD
 * Virtual envs will live in your home dir /opt/anaconda3/envs/.
+=======
+* Virtual envs will live in your home dir ~/envs/.
+>>>>>>> 4292137ddb7d11e89095522d60c0f538a76c0de0
