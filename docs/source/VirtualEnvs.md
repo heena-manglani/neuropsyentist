@@ -24,12 +24,6 @@ conda activate <env_name>
 conda install numpy
 ```
 
-To <strong>export</strong> your env:
-```
-conda activate <env_name>
-conda <env_name> export > environment.yml
-```
-
 To <strong>view</strong> a list of your envs:
 ```
 conda env list
@@ -38,6 +32,12 @@ conda env list
 To <strong>exit</strong> the env:
 ```
 conda deactivate
+```
+
+To <strong>export</strong> your env:
+```
+conda activate <env_name>
+conda <env_name> export > environment.yml
 ```
 
 To <strong>duplicate</strong> an existing env:
