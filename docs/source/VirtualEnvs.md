@@ -47,4 +47,4 @@ conda deactivate
 ```
 
 ## Need to Know
-* Virtual envs will live in your home dir ~/envs/.
+* Virtual envs will live in your home dir /opt/anaconda3/envs/.
