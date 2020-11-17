@@ -37,7 +37,7 @@ conda deactivate
 To <strong>export</strong> your env:
 ```
 conda activate <env_name>
-save conda env export > environment.yml
+conda env export > environment.yml
 ```
 
 To <strong>duplicate</strong> an existing env:
