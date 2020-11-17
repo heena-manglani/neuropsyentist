@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Customization &mdash; Neuropsyentist 0.0.1 documentation</title>
+  <title>Oh My ZSH &mdash; Neuropsyentist 0.0.1 documentation</title>
   
 
   
@@ -34,8 +34,7 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Git" href="Git.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,19 +79,13 @@
             
             
               <p class="caption"><span class="caption-text">Setting up your Mac</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="XCode.html">XCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PackageManagers.html">Package Managers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="VScode.html">VScode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Git.html">Git</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Customization</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#oh-my-zsh"><strong>Oh My Zsh</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#p10k-fonts">P10k fonts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#updating-zshrc">Updating .zshrc</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Customization.html">Customization</a></li>
 </ul>
 
             
@@ -138,13 +131,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Customization</li>
+      <li>Oh My ZSH</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/source/Customization.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/source/OhMyZSH.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,38 +150,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="customization">
-<h1>Customization<a class="headerlink" href="#customization" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="oh-my-zsh">
-<h2><strong>Oh My Zsh</strong><a class="headerlink" href="#oh-my-zsh" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Zsh is a terminal built on the same shell as bash and is now the default on Macs.</p></li>
-<li><p>Oh My Zsh is a framework that wraps around the zsh terminal and allows use of plugins and themes.</p></li>
-</ul>
-</div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>To install Oh My ZSH:</p>
+  <div class="section" id="oh-my-zsh">
+<h1>Oh My ZSH<a class="headerlink" href="#oh-my-zsh" title="Permalink to this headline">¶</a></h1>
+<p>Zsh is a terminal built on the same shell as bash and it is now the default on all new Macs.
+Oh My Zsh is a framework that wraps your zsh terminal and allows the use of plugins and themes to make your terminal.</p>
+<div class="section" id="installations">
+<h2>Installations<a class="headerlink" href="#installations" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Install Oh My ZSH:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
-<p>To install Powerlevel10k theme:</p>
+</li>
+<li><p>Install Powerlevel10k Theme:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/romkatv/powerlevel10k.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="nv">$HOME</span><span class="p">/.oh-my-zsh/custom</span><span class="si">}</span>/themes/powerlevel10k
 </pre></div>
 </div>
-<p>To install plugins for the terminal:</p>
+</li>
+<li><p>Install Plugins:</p>
 <ul>
-<li><p>Auto suggestions</p>
+<li><p>Auto suggestions in the terminal</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
 </pre></div>
 </div>
-<ul>
-<li><p>Auto highlighting commands</p>
+</li>
+<li><p>Auto Highlighting commands in the terminal</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-syntax-highlighting
 </pre></div>
 </div>
 </li>
-<li><p>Auto completions</p>
+<li><p>Auto Completions commands in the terminal</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/zsh-users/zsh-completions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="p">:=~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-completions
 </pre></div>
 </div>
@@ -199,23 +190,50 @@
 </div>
 <div class="section" id="p10k-fonts">
 <h2>P10k fonts<a class="headerlink" href="#p10k-fonts" title="Permalink to this headline">¶</a></h2>
-<p>The Powerlevel10k theme has recommended fonts to use although they are not necessary. <a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k" target="_blank" rel="noreferrer">Install them here</a></p>
+<p>The Powerlevel10k theme has recommended fonts to use although they are not necessary.<br />Install them <a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k" target="_blank" rel="noreferrer">here</a></p>
 </div>
 <div class="section" id="updating-zshrc">
 <h2>Updating .zshrc<a class="headerlink" href="#updating-zshrc" title="Permalink to this headline">¶</a></h2>
-<p>All of the configuration settings for OMZ will be in the ~/.zshrc file.
-To update, in the terminal enter:</p>
+<p>All of the configuration settings for OMZ will be in the ~/.zshrc file.</p>
+<ul>
+<li><p>In the terminal</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano ~/.zshrc
 </pre></div>
 </div>
-<p>Add this into the plugins section:
-<code class="docutils literal notranslate"><span class="pre">json</span> <span class="pre">plugins=(</span> <span class="pre">git</span> <span class="pre">zsh-autosuggestions</span> <span class="pre">zsh-syntax-highlighting</span> <span class="pre">zsh-completions</span> <span class="pre">)</span> </code>
-To change the zsh_theme</p>
+</li>
+<li><p>Add this into the plugins section</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>plugins=(
+        git
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+        zsh-completions
+)
+</pre></div>
+</div>
+</li>
+<li><p>Change the ZSH_THEME</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;powerlevel10k/powerlevel10k&quot;</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Anaconda</p></li>
+</li>
+<li><p>This is added to bash_profile when anaconda is installed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># &gt;&gt;&gt; conda initialize &gt;&gt;&gt;
+# !! Contents within this block are managed by &#39;conda init&#39; !!
+__conda_setup=&quot;$(&#39;/opt/anaconda3/bin/conda&#39; &#39;shell.bash&#39; &#39;hook&#39; 2&gt; /dev/null)&quot;
+if [ $? -eq 0 ]; then
+    eval &quot;$__conda_setup&quot;
+else
+    if [ -f &quot;/opt/anaconda3/etc/profile.d/conda.sh&quot; ]; then
+        . &quot;/opt/anaconda3/etc/profile.d/conda.sh&quot;
+    else
+        export PATH=&quot;/opt/anaconda3/bin:$PATH&quot;
+    fi
+fi
+unset __conda_setup
+# &lt;&lt;&lt; conda initialize &lt;&lt;&lt;
+</pre></div>
+</div>
+</li>
 </ul>
 </div>
 </div>
@@ -225,13 +243,6 @@ To change the zsh_theme</p>
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="Git.html" class="btn btn-neutral float-left" title="Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
