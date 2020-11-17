@@ -12,11 +12,11 @@ Tool to manage and isolate project dependencies. <a href="https://docs.conda.io/
 ## Bread and Butter Commands
 To <strong>create</strong> a virtual env:
 ```
-conda create --name <name> python=3.8 <package>
+conda create --name <env_name> python=3.8 <package>
 ```
 To <strong>activate</strong> a virtual env:
 ```
-conda activate <name>
+conda activate <env_name>
 ````
 
 <strong>Install</strong> a package to the virtual env:
@@ -26,8 +26,8 @@ conda install numpy
 
 To <strong>export</strong> your env:
 ```
-conda activate <name>
-conda env export > environment.yml
+conda activate <env_name>
+conda <env_name> export > environment.yml
 ```
 
 To <strong>view</strong> a list of your envs:
@@ -40,10 +40,10 @@ To <strong>exit</strong> the env:
 conda deactivate
 ```
 
-To <strong>duplicate</strong> someone else's env:
-* pull their repo, create a virtual env, and install its dependencies
+To <strong>duplicate</strong> an existing env:
 ```
-pip install -r requirements.txt
+conda install -n <env_name> environment.yml
+conda activate <env_name>
 ```
 
 ## Need to Know
