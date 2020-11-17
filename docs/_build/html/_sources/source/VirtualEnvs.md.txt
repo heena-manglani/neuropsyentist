@@ -47,8 +47,4 @@ conda activate <env_name>
 ```
 
 ## Need to Know
-<<<<<<< HEAD
 * Virtual envs will live in your home dir /opt/anaconda3/envs/.
-=======
-* Virtual envs will live in your home dir ~/envs/.
->>>>>>> 4292137ddb7d11e89095522d60c0f538a76c0de0
