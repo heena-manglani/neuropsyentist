@@ -37,7 +37,7 @@ conda deactivate
 To <strong>export</strong> your env:
 ```
 conda activate <env_name>
-conda <env_name> export > environment.yml
+conda env export > environment.yml
 ```
 
 To <strong>duplicate</strong> an existing env:
@@ -47,4 +47,4 @@ conda activate <env_name>
 ```
 
 ## Need to Know
-* Virtual envs will live in your home dir ~/envs/.
+* Virtual envs will live in your home dir /opt/anaconda3/envs/.
