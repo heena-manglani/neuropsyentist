@@ -40,6 +40,12 @@ All of the configuration settings for OMZ will be in the ~/.zshrc file.
   ```bash
   nano ~/.zshrc
   ```
+
+* To change the zsh_theme:
+  ```bash
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+  ```
+
 * Add this into the plugins section:
   ```json
     plugins=(
@@ -48,10 +54,6 @@ All of the configuration settings for OMZ will be in the ~/.zshrc file.
             zsh-syntax-highlighting
             zsh-completions
     )
-  ```
-* To change the zsh_theme
-  ```bash
-  ZSH_THEME="powerlevel10k/powerlevel10k"
   ```
 
 * This is added to bash_profile when anaconda is installed.
