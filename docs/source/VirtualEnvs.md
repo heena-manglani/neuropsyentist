@@ -1,6 +1,7 @@
 Virtualenvs
 ============
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-vQyULHqCeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-vQyULHqCeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+<br>
 
 Tool to manage and isolate project dependencies. <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands" target="_blank" rel="noreferrer">Documentation</a>
 
