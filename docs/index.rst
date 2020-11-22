@@ -5,8 +5,8 @@
 
 Welcome to Neuropsyentist's documentation!
 ==========================================
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WG2UPOz9yRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
-<br>
+
+.. youtube:: WG2UPOz9yRk
 
 .. **How to set up a mac from scratch for doing MRI analysis**
 --------------------------------------------------------------

@@ -1,7 +1,8 @@
 Package Managers
 ================
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/14DZXysyLwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/14DZXysyLwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+<br>
 
 <a href="https://brew.sh/" target="_blank" rel="noreferrer">Homebrew</a>, <a href="https://docs.conda.io/en/latest/" target="_blank" rel="noreferrer">Anaconda</a>, and <a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noreferrer">Pip</a> are all package installer tools.
 

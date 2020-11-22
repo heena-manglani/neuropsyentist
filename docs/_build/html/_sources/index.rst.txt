@@ -6,9 +6,10 @@
 Welcome to Neuropsyentist's documentation!
 ==========================================
 
+.. youtube:: WG2UPOz9yRk
 
 .. **How to set up a mac from scratch for doing MRI analysis**
------------------------------------------------------------
+--------------------------------------------------------------
 
 .. toctree::
    :maxdepth: 1
