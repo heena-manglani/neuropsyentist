@@ -172,8 +172,8 @@
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>To install Oh My ZSH:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+<p>To install Oh My Zsh:</p>
+<div class="highlight-bashhttps://fmriprep.org/en/stable/ notranslate"><div class="highlight"><pre><span></span>sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
 </pre></div>
 </div>
 <p>To install Powerlevel10k theme:</p>
@@ -201,22 +201,32 @@
 </div>
 <div class="section" id="p10k-fonts">
 <h2>P10k fonts<a class="headerlink" href="#p10k-fonts" title="Permalink to this headline">¶</a></h2>
-<p>The Powerlevel10k theme has recommended fonts to use although they are not necessary. <a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k" target="_blank" rel="noreferrer">Install them here</a></p>
+<p>Though not necessary, the Powerlevel10k theme has recommended fonts. <a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k" target="_blank" rel="noreferrer">Install them here.</a></p>
 </div>
 <div class="section" id="updating-zshrc">
 <h2>Updating .zshrc<a class="headerlink" href="#updating-zshrc" title="Permalink to this headline">¶</a></h2>
-<p>All of the configuration settings for OMZ will be in the ~/.zshrc file.
-To update, in the terminal enter:</p>
+<p>All of the configuration settings for OMZ will be in the ~/.zshrc file.</p>
+<ul>
+<li><p>To update, in the terminal enter:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano ~/.zshrc
 </pre></div>
 </div>
-<p>Add this into the plugins section:
-<code class="docutils literal notranslate"><span class="pre">plugins=(</span> <span class="pre">git</span> <span class="pre">zsh-autosuggestions</span> <span class="pre">zsh-syntax-highlighting</span> <span class="pre">zsh-completions</span> <span class="pre">)</span></code>
-To change the zsh_theme</p>
+</li>
+<li><p>Add this into the plugins section:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>  plugins=(
+          git
+          zsh-autosuggestions
+          zsh-syntax-highlighting
+          zsh-completions
+  )
+</pre></div>
+</div>
+</li>
+<li><p>To change the zsh_theme</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;powerlevel10k/powerlevel10k&quot;</span>
 </pre></div>
 </div>
-<ul>
+</li>
 <li><p>This is added to bash_profile when anaconda is installed.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># &gt;&gt;&gt; conda initialize &gt;&gt;&gt;
 # !! Contents within this block are managed by &#39;conda init&#39; !!
@@ -235,8 +245,13 @@ unset __conda_setup
 </pre></div>
 </div>
 </li>
-<li><p>Close and re-open Terminal to go through powerlevel10k installation.</p></li>
+<li><p>Close and re-open Terminal to go through powerlevel10k installation. <br>
+<br></p></li>
 </ul>
+<p>To reconfigure the powerlevel10k theme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p10k</span> <span class="n">configure</span>
+</pre></div>
+</div>
 </div>
 </div>
 

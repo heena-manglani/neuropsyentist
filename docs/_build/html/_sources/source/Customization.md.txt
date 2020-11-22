@@ -6,8 +6,8 @@ Customization
 * Oh My Zsh is a framework that wraps around the zsh terminal and allows use of plugins and themes.
 
 ## Installation
-To install Oh My ZSH:  
-```bash
+To install Oh My Zsh:  
+```bashhttps://fmriprep.org/en/stable/
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -31,29 +31,28 @@ To install plugins for the terminal:
   ```
 
 ## P10k fonts
-The Powerlevel10k theme has recommended fonts to use although they are not necessary. <a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k" target="_blank" rel="noreferrer">Install them here</a>
-
+Though not necessary, the Powerlevel10k theme has recommended fonts. <a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k" target="_blank" rel="noreferrer">Install them here.</a>
 
 ## Updating .zshrc
 
-All of the configuration settings for OMZ will be in the ~/.zshrc file.
-To update, in the terminal enter:
+All of the configuration settings for OMZ will be in the ~/.zshrc file.  
+* To update, in the terminal enter:
   ```bash
   nano ~/.zshrc
   ```
-Add this into the plugins section:
-    ```
+* Add this into the plugins section:
+  ```json
     plugins=(
             git
             zsh-autosuggestions
             zsh-syntax-highlighting
             zsh-completions
     )
-    ```
-To change the zsh_theme
-```bash
-ZSH_THEME="powerlevel10k/powerlevel10k"
-```
+  ```
+* To change the zsh_theme
+  ```bash
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+  ```
 
 * This is added to bash_profile when anaconda is installed.
     ```
@@ -73,4 +72,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
     # <<< conda initialize <<<
     ```
 
-* Close and re-open Terminal to go through powerlevel10k installation.
+* Close and re-open Terminal to go through powerlevel10k installation. <br>
+  <br>
+
+To reconfigure the powerlevel10k theme:
+  ```
+  p10k configure
+  ```
